@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Café De Lumière</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <!--Navigation bar-->
+
+    <nav class="desktop-navbar mobile-navbar" id="mobile-navbar">
+      <div class="logo">
+        <img src="images/coffee-shop-logo.png" alt="Coffee shop logo" />
+      </div>
+      <a class="menu-icon" onclick="hamburger()"><div>&#9776;</div></a>
+
+      <ul class="navbar-links" id="navbar-links">
+        <li>
+          <a href="index.html">Home</a>
+        </li>
+        <li>
+          <a href="menu.html">Menu</a>
+        </li>
+        <li>
+          <a href="index.html#rewards">Rewards</a>
+        </li>
+        <li>
+          <a href="contact.html">Contact</a>
+        </li>
+      </ul>
+    </nav>
+
+    <section class="panel panel4">
+      <div class="contact-container">
+        <form>
+          <fieldset class="form-container">
+            <legend>Contact Us</legend>
+            <h2>Got a feedback or Question?</h2>
+            <p>Send us a note - we're happy to help you.</p>
+            <div class="first-name">
+              <input
+                type="text"
+                name="Name"
+                placeholder="First name"
+                id="Name"
+                required=""
+              />
+            </div>
+            <div class="last-name">
+              <input
+                type="text"
+                name="Name"
+                placeholder="Last Name"
+                id="Name"
+                required=""
+              />
+            </div>
+
+            <div class="phone">
+              <input
+                type="tel"
+                id="phone"
+                placeholder="Phone Number"
+                name="phone"
+                required=""
+              />
+            </div>
+            <div class="email">
+              <input
+                type="email"
+                name="email"
+                placeholder="Email"
+                id="email"
+                required=""
+              />
+            </div>
+            <div class="message">
+              <textarea
+                id="message"
+                value="message"
+                placeholder="Leave a message here"
+                required=""
+              ></textarea>
+            </div>
+          </fieldset>
+
+          <input type="submit" id="submit" value="Submit" class="submit" />
+        </form>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container-footer">
+        <p>© Copyright 2021. All Rights Reserved.</p>
+        <p>
+          <a href="mailto:cafedelumiere@gmail.com" class="text-white"
+            >cafedelumiere@gmail.com</a
+          >
+        </p>
+
+        <div class="social-logo">
+          <a href="https://www.facebook.com/cafedelumiere" target="_blank"
+            ><img
+              src="images/facebook-logo.png"
+              alt="black and white Facebook logo"
+              class="pr-4"
+          /></a>
+
+          <a href="https://twitter.com/cafedelumiere" target="_blank"
+            ><img
+              src="images/twitter-logo.png"
+              alt="black and white Twitter logo"
+          /></a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="scripts/script.js"></script>
+  </body>
+</html>

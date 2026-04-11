@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Café De Lumière</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <!--Navigation bar-->
+
+    <nav class="desktop-navbar mobile-navbar" id="mobile-navbar">
+      <div class="logo">
+        <img src="images/coffee-shop-logo.png" alt="Coffee shop logo" />
+      </div>
+      <a class="menu-icon" onclick="hamburger()"><div>&#9776;</div></a>
+
+      <ul class="navbar-links" id="navbar-links">
+        <li>
+          <a href="#home">Home</a>
+        </li>
+        <li>
+          <a href="menu.html">Menu</a>
+        </li>
+        <li>
+          <a href="index.html#rewards">Rewards</a>
+        </li>
+        <li>
+          <a href="contact.html">Contact</a>
+        </li>
+      </ul>
+    </nav>
+
+    <!--Hero image-->
+    <section class="panel panel1" id="home">
+      <div class="banner">
+        <p>Welcome back! John Doe. Start your day with a cup of coffee.</p>
+      </div>
+
+      <div class="recommended">
+        <div class="section-header">
+          <h2>Menu</h2>
+          <p>Full menu -></p>
+        </div>
+
+        <ul>
+          <li>
+            <img src="images/americano_misto.jpeg" />
+            <p>Americano</p>
+          </li>
+          <li>
+            <img src="images/easy_chocolate_cake_slice.jpeg" />
+            <p>Chocolate cake</p>
+          </li>
+          <li>
+            <img src="images/hq720.jpg" />
+            <p>Cheese cake</p>
+          </li>
+          <li>
+            <img src="images/thai-tea-lemonade-6.jpg" />
+            <p>Thai tea</p>
+          </li>
+          <li>
+            <p class="menu-link">Full menu -></p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!--Rewards-->
+    <section id="rewards" class="panel panel2">
+      <!-- <h2>Get your favorites for FREE!</h2> -->
+      <div>
+        <div class="section-header">
+          <h2>Rewards</h2>
+          <p>View more</p>
+        </div>
+
+        <div>
+          <div class="rewardHeader2">
+            <h2>Cash or card, you earn stars</h2>
+            <p>No matter how you pay, you can earn stars with your purchase.</p>
+          </div>
+          <ul class="howToEarn">
+            <li>
+              <h2><span class="star">&#9733;</span> 1 star per dollar</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore
+                adipisci tenetur error.
+              </p>
+            </li>
+            <li>
+              <h2><span class="star">&#9733;</span> Scan and pay separately</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore
+                adipisci tenetur error.
+              </p>
+            </li>
+            <li>
+              <h2><span class="star">&#9733;</span> Save payment in the app</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore
+                adipisci tenetur error.
+              </p>
+            </li>
+            <li>
+              <h2><span class="star">&#9733;</span>2 stars</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore
+                adipisci tenetur error.
+              </p>
+            </li>
+            <li>
+              <h2><span class="star">&#9733;</span> Preload</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore
+                adipisci tenetur error.
+              </p>
+            </li>
+            <li>
+              <h2><span class="star">&#9733;</span> Register your gift card</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore
+                adipisci tenetur error.
+              </p>
+            </li>
+          </ul>
+        </div>
+
+        <div class="slides" id="slides">
+          <figure class="slide">
+            <img src="images/100.png" alt="coffee refill" width="100%" />
+            <figcation>Customize drink</figcation>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae
+              delectus quod quasi nemo impedit quibusdam eveniet rerum, laborum
+              animi accusamus quisquam sapiente, nostrum sint consectetur
+              exercitationem? Nesciunt ducimus amet maiores.
+            </p>
+          </figure>
+          <figure class="slide">
+            <img src="images/200.png" alt="coffee refill" width="100%" />
+            <figcation>Free refill for your first visit</figcation>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae
+              delectus quod quasi nemo impedit quibusdam eveniet rerum, laborum
+              animi accusamus quisquam sapiente, nostrum sint consectetur
+              exercitationem? Nesciunt ducimus amet maiores.
+            </p>
+          </figure>
+          <figure class="slide">
+            <img src="images/300.png" alt="coffee refill" width="100%" />
+            <figcation>Handcrafted drinks</figcation>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae
+              delectus quod quasi nemo impedit quibusdam eveniet rerum, laborum
+              animi accusamus quisquam sapiente, nostrum sint consectetur
+              exercitationem? Nesciunt ducimus amet maiores.
+            </p>
+          </figure>
+          <figure class="slide">
+            <img src="images/400.png" alt="coffee refill" width="100%" />
+            <figcation>Signature cup</figcation>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae
+              delectus quod quasi nemo impedit quibusdam eveniet rerum, laborum
+              animi accusamus quisquam sapiente, nostrum sint consectetur
+              exercitationem? Nesciunt ducimus amet maiores.
+            </p>
+          </figure>
+        </div>
+      </div>
+
+      <!--How to earn rewards-->
+    </section>
+
+    <section class="panel panel3" id="contact">
+      <div class="container">
+        <div class="about-us">
+          <img src="images/coffee-shop-logo.png" alt="coffee shop logo" />
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam cum
+            ipsa sunt pariatur. Voluptatum quae, illo eligendi commodi unde
+            neque? Tempore iure voluptas facere provident illum. Suscipit quam
+            odit quod?
+          </p>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam cum
+            ipsa sunt pariatur. Voluptatum quae, illo eligendi commodi unde
+            neque? Tempore iure voluptas facere provident illum. Suscipit quam
+            odit quod?
+          </p>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam cum
+            ipsa sunt pariatur. Voluptatum quae, illo eligendi commodi unde
+            neque? Tempore iure voluptas facere provident illum. Suscipit quam
+            odit quod?
+          </p>
+        </div>
+
+        <div>
+          <h2>Welcome to Café De Lumière Rewards</h2>
+
+          <h5>Sign in, sip, and let the light in</h5>
+          <p>
+            Sign in now and enjoy<span>
+              50% off your next handcrafted drink</span
+            >-our way of saying merci.
+          </p>
+          <p>
+            Join our Loyalty circle and unlock:<br />
+            *Exclusive member-only offers<br />
+            *A free drink on your birthday<br />
+            *Surprise rewards with every sip.
+          </p>
+          <p>
+            Because every great day starts with a little light-and a lot of
+            coffee.
+          </p>
+          <div>
+            <button
+              type="button"
+              onclick="window.location.href='log-in-page.html'"
+            >
+              Log in
+            </button>
+            <button
+              type="button"
+              onclick="window.location.href='log-in-page.html?show=signupForm'"
+            >
+              Join now
+            </button>
+          </div>
+        </div>
+        <!--
+        <div>
+          <table>
+            <tr>
+              <th>Walk-in</th>
+              <th>Drive Thru</th>
+            </tr>
+            <tr>
+              <td>Monday - Friday: 6AM to 1PM</td>
+              <td>Monday - Friday: 6AM to 1PM</td>
+            </tr>
+            <tr>
+              <td>Saturday: 6AM to 1PM</td>
+              <td>Saturday: 6AM to 1PM</td>
+            </tr>
+            <tr>
+              <td>Sunday: Closed</td>
+              <td>Sunday: Closed</td>
+            </tr>
+          </table>
+        </div>
+      --></div>
+    </section>
+    <footer>
+      <div class="container-footer">
+        <p>© Copyright 2021. All Rights Reserved.</p>
+        <p>
+          <a href="mailto:cafedelumiere@gmail.com" class="text-white"
+            >cafedelumiere@gmail.com</a
+          >
+        </p>
+
+        <div class="social-logo">
+          <a href="https://www.facebook.com/cafedelumiere" target="_blank"
+            ><img
+              src="images/facebook-logo.png"
+              alt="black and white Facebook logo"
+              class="pr-4"
+          /></a>
+
+          <a href="https://twitter.com/cafedelumiere" target="_blank"
+            ><img
+              src="images/twitter-logo.png"
+              alt="black and white Twitter logo"
+          /></a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="scripts/script.js"></script>
+  </body>
+</html>
