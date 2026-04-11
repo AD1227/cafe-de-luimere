@@ -1,0 +1,526 @@
+body,
+header,
+nav,
+main,
+footer,
+h1,
+h2,
+div,
+img figure section {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+/*==================
+Global Style
+===================
+*/
+body {
+  color: black;
+}
+
+p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+ul {
+  list-style: none;
+}
+
+.hero {
+  max-width: 100px;
+}
+.logo {
+  padding: 10px;
+}
+.logo img {
+  border-radius: 50px;
+  height: 50px;
+  width: 50px;
+  display: flex;
+}
+
+/*===============
+Panel styles
+===========
+*/
+.panel {
+  display: flex;
+  justify-content: center;
+  padding-top: 10vh;
+  font-size: 30px;
+  color: white;
+  height: 100%;
+  max-width: 100vw;
+}
+
+.panel1 {
+  background-color: #0f172a;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-self: flex-start;
+}
+.panel2 {
+  background-color: #303b53;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-self: flex-start;
+  overflow: auto;
+
+  gap: 10px;
+}
+.panel3 {
+  background-color: #050f25;
+}
+.panel4 {
+  background-color: #0f172a;
+  top: 55px;
+}
+.panel5 {
+  background-color: #131a29;
+}
+
+/*=========
+Moblie navigiation bar CSS style
+===========
+*/
+#navbar-links {
+  /*Sits off-screen to the right, always rendered */
+  transform: translateX(100%);
+  transition: transform 0.4s ease-in-out;
+
+  background: rgba(230, 178, 73, 0.895);
+  margin: 0;
+  top: 10vh;
+  right: 0;
+  position: fixed; /*use fixed so it overlays everything */
+  display: flex;
+  z-index: 99998;
+
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  height: 100vh;
+  width: 80vw;
+  font-size: 40px;
+  padding: 0;
+}
+/*===========
+When active, slide it back into view
+===========
+*/
+#navbar-links.open {
+  transform: translateX(0);
+}
+
+.menu-icon {
+  display: flex;
+  font-size: 50px;
+  border: solid 1px;
+  width: 50px;
+  padding: 0;
+  color: rgb(73, 73, 74);
+}
+
+.mobile-navbar {
+  display: flex;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: 10vh;
+  left: 0;
+  padding: 0 0 5px 0;
+  flex-direction: row;
+
+  justify-content: space-between;
+  background: rgb(230, 178, 73);
+  z-index: 99999;
+}
+
+.mobile-navbar li {
+  align-items: center;
+  width: 80px;
+  padding: 20px 0 10px 0;
+}
+
+/*=============
+Style for mobile banner
+===============
+*/
+.banner {
+  color: white;
+  border-bottom: white solid 1.5px;
+}
+.banner p {
+  text-align: left;
+  font-size: 40px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  padding-left: 10px;
+}
+
+/*=================
+style for menu recommendation in panel 1
+================= */
+.recommended img {
+  width: 150px;
+  height: 150px;
+  border-radius: 20px;
+}
+
+.recommended ul {
+  display: flex;
+  flex-direction: row;
+  overflow: auto;
+  gap: 20px;
+  align-items: center;
+}
+
+.menu-link {
+  width: 150px;
+  padding: 10px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 20px;
+  font-weight: bold;
+}
+.header-btn {
+  color: white;
+  font-size: 15px;
+  padding: 10px;
+}
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+}
+.section-header h2 {
+  font-size: 20px;
+  padding: 10px;
+
+  margin: 0;
+}
+.section-header p {
+  top: 0;
+  font-size: 15px;
+
+  margin: 0;
+  padding: 10px;
+}
+
+/*======================
+Style for reward section slides
+====================== */
+
+.slides {
+  display: flex;
+  flex-direction: row;
+  overflow: scroll;
+}
+.slide {
+  width: 250px;
+  height: 350px;
+  overflow: auto;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  margin: 10px 10px 10px 0;
+  border: white solid 1px;
+  flex-direction: column;
+  flex-shrink: 0;
+}
+.slide img {
+  height: 150px;
+}
+.rewardHeader2 {
+  padding: 10px;
+  border-bottom: white solid 1px;
+}
+.rewardHeader2 h2 {
+  font-size: 20px;
+}
+
+.howToEarn {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.howToEarn li {
+  border: white solid 1px;
+  border-radius: 10px;
+  padding: 5px;
+}
+.howToEarn li h2 {
+  font-size: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  margin-bottom: 10px;
+}
+.star {
+  border-radius: 50px;
+  background: darkgoldenrod;
+  color: black;
+  font-size: 20px;
+  margin-right: 5px;
+}
+.container img {
+  height: 150px;
+  width: 150px;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: repeat(2, 1fr);
+  padding: 10px;
+}
+.container p {
+  font-size: 15px;
+}
+.container table {
+  font-size: 15px;
+  border-collapse: separate;
+  border-spacing: 10px;
+  border: white solid 1px;
+}
+.container tr td {
+  border: white solid 1px;
+  padding: 5px;
+}
+/************* style for Contact page **********/
+.contact-container {
+  background-image: url("../images/shop-photo.jpg");
+  background-size: cover;
+
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+  padding-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.form-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  max-width: 500px;
+
+  position: relative;
+
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+
+  border: rgb(255, 255, 255, 0.3) solid 1px;
+
+  border-radius: 15px;
+
+  color: white;
+}
+
+.form-container input {
+  width: 100px;
+  font-weight: bold;
+}
+.form-container textarea {
+  width: 200px;
+  height: 100px;
+}
+.form-container legend,
+.form-container p,
+.form-container h2 .phone,
+.email,
+.message {
+  grid-column: span 2;
+}
+.form-container h2 {
+  font-size: 20px;
+}
+.submit {
+  grid-column: 2;
+  justify-content: end;
+  margin: 15px;
+  height: 40px;
+  width: auto;
+}
+
+/**************style for menu page *************/
+.table-menu {
+  border: white solid 1px;
+  border-collapse: collapse;
+  border-radius: 10px;
+  width: 300px;
+  height: 500px;
+  margin: 20px 40px;
+  box-shadow: 0 4px 30px rgba(255, 245, 245, 0.569);
+}
+.table-menu img {
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+}
+.table-menu th {
+  font-size: 30px;
+}
+.table-menu tr {
+  border-bottom: white solid 1px;
+  font-size: 15px;
+}
+
+/* style for footer*/
+.container-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: #303b53;
+  color: white;
+}
+.contact-container a {
+  color: white;
+}
+.social-logo {
+  display: flex;
+  flex-direction: row;
+}
+.social-logo img {
+  height: 50px;
+  width: 50px;
+  padding: 10px;
+}
+
+@media screen and (min-width: 1020px), print {
+  .menu-icon {
+    display: none;
+  }
+  #navbar-links {
+    display: flex;
+    top: 0;
+    transform: translateX(0);
+    flex-direction: row;
+    height: 10vh;
+    width: auto;
+  }
+  .desktop-navbar {
+    padding: 0 10px 0 10px;
+  }
+
+  .desktop-navbar li {
+    padding: 20px;
+    width: fit-content;
+  }
+
+  .panel1 {
+    justify-content: center;
+  }
+  .panel2 {
+    overflow: none;
+  }
+  .panel3 {
+    display: flex;
+    justify-content: center;
+  }
+  .panel {
+  }
+
+  .banner {
+    display: flex;
+    border: solid 1px white;
+    justify-content: center;
+    align-self: center;
+    top: 60px;
+    width: 300px;
+    height: 250px;
+    margin: 40px;
+  }
+  .recommended {
+    border-top: white solid 1px;
+    height: 200px;
+  }
+
+  .recommended img {
+    width: 80px;
+    height: 80px;
+  }
+
+  /* rewards*/
+
+  .howToEarn {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    padding: 10px;
+  }
+
+  /*slides*/
+
+  .slides {
+    padding-left: 50px;
+    gap: 10px;
+  }
+  .slide {
+    overflow: visible;
+  }
+
+  /*style for about us section */
+  .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    margin-left: 20px;
+  }
+  .about-us {
+    display: grid;
+    max-width: 500px;
+    height: 100px;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    gap: 5px;
+  }
+  .about-us img {
+    display: flex;
+    align-self: center;
+    justify-content: center;
+  }
+
+  /* style for contact */
+  .contact-container {
+    width: 100%;
+    height: auto;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 20px;
+  }
+  .form-container input {
+    width: 200px;
+    height: auto;
+    font-weight: bold;
+  }
+  .form-container textarea {
+    width: 300px;
+    height: 200px;
+  }
+
+  /**************style for menu page *************/
+  .table-menu {
+    width: 500px;
+    height: auto;
+  }
+  .table-menu img {
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;
+  }
+
+  .table-menu tr {
+    border-bottom: white solid 1px;
+    font-size: 15px;
+  }
+}
