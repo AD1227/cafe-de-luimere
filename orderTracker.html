@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Café De Lumière</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <!--Navigation bar-->
+
+    <nav class="desktop-navbar mobile-navbar" id="mobile-navbar">
+      <div class="logo">
+        <img src="images/coffee-shop-logo.png" alt="Coffee shop logo" />
+      </div>
+      <a class="menu-icon" onclick="hamburger()"><div>&#9776;</div></a>
+
+      <ul class="navbar-links" id="navbar-links">
+        <li>
+          <a href="index.html">Home</a>
+        </li>
+        <li>
+          <a href="#menu">Menu</a>
+        </li>
+        <li>
+          <a href="index.html#rewards">Rewards</a>
+        </li>
+        <li>
+          <a href="contact.html">Contact</a>
+        </li>
+      </ul>
+    </nav>
+
+    <section class="panel panel5">
+      <div class="orderTracker">
+        <div id="greeting" class="message">Hello</div>
+        <table class="tracker-container">
+          <tbody>
+            <tr>
+              <td>Ordered Status:</td>
+              <td id="status" class="status">status</td>
+            </tr>
+            <tr>
+              <td>Item Ordered:</td>
+              <td id="item1">item</td>
+            </tr>
+            <tr>
+              <td>----------------</td>
+              <td id="item2">item</td>
+            </tr>
+            <tr>
+              <td>----------------</td>
+              <td id="item3">item</td>
+            </tr>
+            <tr>
+              <td>subtotal</td>
+              <td id="subTotal">$70</td>
+            </tr>
+            <tr>
+              <td>Tip:</td>
+              <td id="tip">$7</td>
+            </tr>
+            <tr>
+              <td>Grand total:</td>
+              <td id="grandTotal">5</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container-footer">
+        <p>© Copyright 2021. All Rights Reserved.</p>
+        <p>
+          <a href="mailto:cafedelumiere@gmail.com">cafedelumiere@gmail.com</a>
+        </p>
+
+        <div class="social-logo">
+          <a href="https://www.facebook.com/cafedelumiere" target="_blank"
+            ><img
+              src="images/facebook-logo.png"
+              alt="black and white Facebook logo"
+              class="pr-4"
+          /></a>
+
+          <a href="https://twitter.com/cafedelumiere" target="_blank"
+            ><img
+              src="images/twitter-logo.png"
+              alt="black and white Twitter logo"
+          /></a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="scripts/script.js"></script>
+  </body>
+</html>
