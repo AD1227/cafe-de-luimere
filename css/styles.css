@@ -83,6 +83,9 @@ Panel styles
 .panel5 {
   background-color: #131a29;
 }
+.panel6 {
+  background-color: #697183;
+}
 
 /*=========
 Moblie navigiation bar CSS style
@@ -427,7 +430,11 @@ Style for reward section slides
     display: flex;
     justify-content: center;
   }
-  .panel {
+  .panel5 {
+    display: flex;
+  }
+  .panel6 {
+    height: 100%;
   }
 
   .banner {
@@ -522,5 +529,35 @@ Style for reward section slides
   .table-menu tr {
     border-bottom: white solid 1px;
     font-size: 15px;
+  }
+  .sub_navbar {
+    width: 100vw;
+  }
+
+  .orderTracker {
+    background-color: rgb(232, 225, 225);
+    color: black;
+    font-size: 18px;
+    margin: 50px 50px;
+    padding-top: 50px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+  #status {
+    color: red;
+    font-size: 28px;
+    font-family: Georgia, "Times New Roman", Times, serif;
+  }
+  .message {
+    font: 1em sans-serif;
+    font-size: 20px;
+    padding: 5px;
+  }
+  .tracker-contaner {
+    border: white solid 1px;
+    border-collapse: collapse;
+    padding: 10px;
   }
 }
