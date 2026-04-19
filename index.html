@@ -43,7 +43,7 @@
       <div class="recommended">
         <div class="section-header">
           <h2>Menu</h2>
-          <p>Full menu -></p>
+          <a href="menu.html" class="recommendationBtn">Full menu -></a>
         </div>
 
         <ul>
@@ -56,17 +56,28 @@
             <p>Chocolate cake</p>
           </li>
           <li>
-            <img src="images/hq720.jpg" />
+            <img src="images/cheese-cake.jpg" />
             <p>Cheese cake</p>
           </li>
           <li>
             <img src="images/thai-tea-lemonade-6.jpg" />
             <p>Thai tea</p>
           </li>
-          <li>
-            <p class="menu-link">Full menu -></p>
-          </li>
         </ul>
+      </div>
+      <div class="offer-container">
+        <p class="offer-banner">Limited Time</p>
+        <p id="offerEnds" class="offerEnds">offer expire</p>
+        <img class="itemPhoto" src="images/caramel-frappe.jpeg" />
+        <div class="offerDetails">
+          <h2 id="itemName">ddddd</h2>
+          <div class="price">
+            <p id="originalPrice">oldPrice</p>
+            <p id="newPrice">newPrice</p>
+          </div>
+          <p>50% off your next Caramel Frappe order</p>
+          <p>Sign in or join now to claim your offer before it's gone</p>
+        </div>
       </div>
     </section>
 
@@ -206,28 +217,29 @@
 
           <h5>Sign in, sip, and let the light in</h5>
           <p>
-            Sign in now and enjoy<span>
-              50% off your next handcrafted drink</span
-            >-our way of saying merci.
+            Sign in now and enjoy<span class="aboutUsHighlights">
+              50% off your next handcrafted drink
+            </span>
+            our way of saying merci.
           </p>
-          <p>
-            Join our Loyalty circle and unlock:<br />
-            *Exclusive member-only offers<br />
-            *A free drink on your birthday<br />
-            *Surprise rewards with every sip.
-          </p>
-          <p>
-            Because every great day starts with a little light-and a lot of
-            coffee.
-          </p>
+          <p>Join our Loyalty circle and unlock:</p>
+          <p>* Exclusive member-only offers</p>
+          <p>* A free drink on your birthday</p>
+
+          <div>
+            <div class="offer-header"><p>limited time</p></div>
+          </div>
+
           <div>
             <button
+              class="logInBtn"
               type="button"
               onclick="window.location.href='log-in-page.html'"
             >
               Log in
             </button>
             <button
+              class="joinNowBtn"
               type="button"
               onclick="window.location.href='log-in-page.html?show=signupForm'"
             >
@@ -235,28 +247,7 @@
             </button>
           </div>
         </div>
-        <!--
-        <div>
-          <table>
-            <tr>
-              <th>Walk-in</th>
-              <th>Drive Thru</th>
-            </tr>
-            <tr>
-              <td>Monday - Friday: 6AM to 1PM</td>
-              <td>Monday - Friday: 6AM to 1PM</td>
-            </tr>
-            <tr>
-              <td>Saturday: 6AM to 1PM</td>
-              <td>Saturday: 6AM to 1PM</td>
-            </tr>
-            <tr>
-              <td>Sunday: Closed</td>
-              <td>Sunday: Closed</td>
-            </tr>
-          </table>
-        </div>
-      --></div>
+      </div>
     </section>
     <footer>
       <div class="container-footer">
