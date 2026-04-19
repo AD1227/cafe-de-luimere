@@ -738,7 +738,7 @@ Style for reward section slides
     display: flex;
     justify-content: center;
     align-self: center;
-    width: 35dvw;
+    width: fit-content;
     height: auto;
   }
   .offerDetails {
