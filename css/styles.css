@@ -752,4 +752,9 @@ Style for reward section slides
     display: flex;
     align-self: self-end;
   }
+  .menu-endrow {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
 }
