@@ -482,6 +482,38 @@ Style for reward section slides
 }
 
 /**************style for menu page *************/
+
+.filter-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  padding: 16px;
+  justify-content: center;
+  width: 100%;
+}
+
+.filter-btn {
+  padding: 8px 16px;
+  border: 1px solid white;
+  border-radius: 20px;
+  background: transparent;
+  color: white;
+  cursor: pointer;
+  font-size: 14px;
+  transition: all 0.2s ease;
+}
+
+.filter-btn:hover {
+  background-color: rgba(255, 255, 255, 0.15);
+}
+
+.filter-btn.active {
+  background-color: gold;
+  color: black;
+  border-color: gold;
+  font-weight: bold;
+}
+
 .table-menu {
   border: white solid 1px;
   border-collapse: collapse;
@@ -701,6 +733,17 @@ Style for reward section slides
   }
 
   /**************style for menu page *************/
+
+  .filter-bar {
+    gap: 12px;
+    padding: 24px;
+  }
+
+  .filter-btn {
+    font-size: 16px;
+    padding: 10px 20px;
+  }
+
   .table-menu {
     width: 500px;
     height: auto;
