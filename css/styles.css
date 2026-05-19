@@ -186,7 +186,6 @@ Style for mobile banner
 */
 .banner {
   color: white;
-  border-bottom: white solid 1.5px;
 }
 .banner p {
   text-align: left;
@@ -198,6 +197,9 @@ Style for mobile banner
 /*=================
 style for menu recommendation in panel 1
 ================= */
+.recommended {
+  border-top: 1px white solid;
+}
 .recommended img {
   width: 150px;
   height: 150px;
@@ -517,7 +519,7 @@ Style for reward section slides
 .table-menu {
   border: white solid 1px;
   border-collapse: collapse;
-  border-radius: 10px;
+
   width: 300px;
   height: 500px;
   margin: 20px 40px;
