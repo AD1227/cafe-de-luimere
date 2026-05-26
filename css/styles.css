@@ -147,36 +147,45 @@ hero slider css style
 
 #hero-animation-container {
   width: 100%;
-  height: 600px;
-  margin: 0 auto;
-  background-color: grey;
+  height: auto;
+  margin: 20px auto;
+  background-color: white;
+  -webkit-backdrop-filter: blur(4px) brightness(0.6);
+  backdrop-filter: blur(4px) brightness(0.6);
+  background: rgba(236, 233, 233, 0.034);
+  justify-content: center;
+  align-items: center;
 }
 .hero-slide-viewer {
   position: relative;
-  overflow: scroll;
+  overflow: hidden;
+  width: 100dvw;
   height: 500px;
-  border: 1px solid red;
   background-color: white;
+
+  margin: 30px auto;
 }
 .hero-slide-group {
   width: 100%;
   height: 100%;
   position: relative;
-  left: 0;
 }
 .hero-slide {
   width: 100%;
   height: 100%;
   display: none;
   position: absolute;
+  left: 500px;
 }
 
 .hero-slide:first-child {
   display: block;
 }
 .hero-slide img {
-  width: 100%;
-  height: 400px;
+  width: 100dvw; /* change this back to 600px at desktop view port**/
+
+  height: auto;
+  max-height: 500px;
   object-fit: cover;
 }
 .hero-slide-text {
@@ -184,16 +193,36 @@ hero slider css style
   bottom: 30px;
   left: 20px;
 
-  text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.8);
+  text-shadow: 2px 2px 12px rgba(0, 0, 0, 0.8);
 }
 .hero-slide-text h2 {
   font-size: 28px;
   margin: 0 0 5px 0;
   font-family: Georgia, "Times New Roman", Times, serif;
+  color: black;
 }
 .hero-slide-text p {
   font-size: 14px;
   margin: 0;
+  color: black;
+}
+
+.hero-slide-btn {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.slide-btn {
+  border: none;
+  background: none;
+  font-size: 30px;
+  cursor: pointer;
+  color: hsl(0, 39%, 27%);
+}
+
+.slide-btn.active {
+  color: white;
+  font-size: 35px;
 }
 
 /*===========
@@ -858,5 +887,23 @@ Style for reward section slides
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+  }
+
+  /**********************style for hero slider*************/
+  .hero-slide-viewer {
+    position: relative;
+    overflow: hidden;
+    width: 500px;
+    height: 500px;
+    background-color: white;
+
+    margin: 30px auto;
+  }
+  .hero-slide img {
+    width: 600px;
+
+    height: auto;
+    max-height: 500px;
+    object-fit: cover;
   }
 }

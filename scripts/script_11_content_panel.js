@@ -53,7 +53,7 @@ $(document).ready(function () {
         } else {
           move(0); //otherwise move to first slide
         }
-      }, 1000); // millisecond timer will wait
+      }, 4000); // millisecond timer will wait
     }
 
     $.each($slides, function (index) {
