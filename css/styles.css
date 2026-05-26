@@ -66,6 +66,7 @@ ul {
   background: none;
   color: white;
 }
+
 /*===============
 Panel styles
 ===========
@@ -139,6 +140,62 @@ Moblie navigiation bar CSS style
   font-size: 40px;
   padding: 0;
 }
+/*===========
+hero slider css style
+===========
+*/
+
+#hero-animation-container {
+  width: 100%;
+  height: 600px;
+  margin: 0 auto;
+  background-color: grey;
+}
+.hero-slide-viewer {
+  position: relative;
+  overflow: scroll;
+  height: 500px;
+  border: 1px solid red;
+  background-color: white;
+}
+.hero-slide-group {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  left: 0;
+}
+.hero-slide {
+  width: 100%;
+  height: 100%;
+  display: none;
+  position: absolute;
+}
+
+.hero-slide:first-child {
+  display: block;
+}
+.hero-slide img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
+.hero-slide-text {
+  position: absolute;
+  bottom: 30px;
+  left: 20px;
+
+  text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.8);
+}
+.hero-slide-text h2 {
+  font-size: 28px;
+  margin: 0 0 5px 0;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+.hero-slide-text p {
+  font-size: 14px;
+  margin: 0;
+}
+
 /*===========
 When active, slide it back into view
 ===========
