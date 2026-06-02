@@ -605,7 +605,7 @@ Style for reward section slides
 .table-menu {
   border: white solid 1px;
   border-collapse: collapse;
-
+  justify-self: center;
   width: 300px;
   height: 500px;
   margin: 20px 40px;
@@ -622,6 +622,26 @@ Style for reward section slides
 .table-menu tr {
   border-bottom: white solid 1px;
   font-size: 15px;
+}
+#menu-search {
+  padding: 8px 16px;
+  border: none;
+  width: auto;
+  border-radius: 20px;
+}
+#menu-sort {
+  width: fit-content;
+  border-radius: 20px;
+  border: none;
+}
+.search-container {
+  background-color: white;
+
+  border-radius: 20px;
+  display: flex;
+  width: fit-content;
+  border: 1px solid white;
+  justify-self: center;
 }
 
 /* style for footer*/
@@ -849,6 +869,14 @@ Style for reward section slides
   .sub_navbar {
     width: 100vw;
   }
+  #menu-search {
+  }
+
+  .search-container {
+    width: 400px;
+    justify-content: space-between;
+  }
+
   /***************** style for Order tracker******************/
   .orderTracker {
     font-size: 25px;
