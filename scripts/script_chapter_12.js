@@ -151,6 +151,7 @@ var menuItems = [
 ];
 
 var activeFilter = "all";
+var activeSort = "default";
 
 function getFiltereditem() {
   return menuItems.filter(function (item) {
@@ -190,10 +191,12 @@ function renderMenu() {
 renderMenu();
 
 $(".filter-btn").on("click", function () {
-  $(".filter-btn").removeClass("active");
-  $(this).addClass("active");
-
   activeFilter = $(this).data("filter");
+  renderMenu();
+});
+
+$("#menu-sort").on("change", function () {
+  activeSort = $(this).val();
   renderMenu();
 });
 

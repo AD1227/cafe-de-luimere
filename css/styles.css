@@ -623,25 +623,49 @@ Style for reward section slides
   border-bottom: white solid 1px;
   font-size: 15px;
 }
+/* ---- search input ---- */
 #menu-search {
-  padding: 8px 16px;
-  border: none;
-  width: auto;
+  flex: 1;
+  padding: 10px 14px;
+  border: 1px solid rgba(255, 255, 255, 0.4);
   border-radius: 20px;
+  background: rgba(255, 255, 255, 0.08);
+  color: white;
+  font-size: 14px;
+  outline: none;
 }
-#menu-sort {
-  width: fit-content;
-  border-radius: 20px;
-  border: none;
+#menu-search::placeholder {
+  color: rgba(255, 255, 255, 0.5);
 }
-.search-container {
-  background-color: white;
+#menu-search:focus {
+  border-color: gold;
+}
 
+/* ---- sort dropdown ---- */
+#menu-sort {
+  padding: 10px 14px;
+  border: 1px solid rgba(255, 255, 255, 0.4);
   border-radius: 20px;
+  background: rgba(255, 255, 255, 0.08);
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+  outline: none;
+}
+#menu-sort:focus {
+  border-color: gold;
+}
+#menu-sort option {
+  background: #1a2235; /* dark background for dropdown options */
+  color: white;
+}
+/* ---- search and sort container ---- */
+.search-container {
   display: flex;
-  width: fit-content;
-  border: 1px solid white;
-  justify-self: center;
+  flex-direction: column;
+  gap: 10px;
+  padding: 0 16px 16px 16px;
+  align-items: center;
 }
 
 /* style for footer*/
@@ -869,12 +893,14 @@ Style for reward section slides
   .sub_navbar {
     width: 100vw;
   }
-  #menu-search {
-  }
-
   .search-container {
-    width: 400px;
-    justify-content: space-between;
+    padding: 0 24px 24px 24px;
+    gap: 15px;
+    flex-direction: row;
+  }
+  #menu-search,
+  #menu-sort {
+    font-size: 15px;
   }
 
   /***************** style for Order tracker******************/
