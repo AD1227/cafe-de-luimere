@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Café De Lumière</title>
+    <link rel="stylesheet" href="css/login-styles.css" />
+  </head>
+  <body>
+    <div class="container login">
+      <form id="login">
+        <div class="first-col">
+          <img src="images/coffee-shop-logo.png" alt="Coffee shop logo" />
+        </div>
+        <div class="second-col" id="main">
+          <fieldset>
+            <legend>Login</legend>
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" />
+            <span class="error-msg" id="username-error"></span>
+
+            <label for="pwd">Password:</label>
+            <input type="password" id="pwd" name="pwd" />
+            <input type="checkbox" id="showPwd" />
+            <span class="error-msg" id="pwd-error"></span>
+            <label for="showPwd" class="showPwd-label">show password</label>
+            <input type="submit" id="submit" value="Login" />
+          </fieldset>
+        </div>
+        <!-- .two-thirds -->
+      </form>
+    </div>
+
+    <footer>
+      <div class="container-footer">
+        <p>© Copyright 2021. All Rights Reserved.</p>
+        <p>
+          <a href="mailto:cafedelumiere@gmail.com" class="text-white"
+            >cafedelumiere@gmail.com</a
+          >
+        </p>
+
+        <div class="social-logo">
+          <a href="https://www.facebook.com/cafedelumiere" target="_blank"
+            ><img
+              src="images/facebook-logo.png"
+              alt="black and white Facebook logo"
+              class="pr-4"
+          /></a>
+
+          <a href="https://twitter.com/cafedelumiere" target="_blank"
+            ><img
+              src="images/twitter-logo.png"
+              alt="black and white Twitter logo"
+          /></a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="scripts/script.js"></script>
+    <script src="scripts/script_login.js"></script>
+  </body>
+</html>
